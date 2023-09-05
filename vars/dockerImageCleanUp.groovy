@@ -8,7 +8,7 @@
 
 def call(String awsAccountID, String region, String ecrRepoName) {
     sh """
-    docker rmi ${ecrRepoNameb}:latest ${awsAccountID}.dkr.ecr.${region}.amazonaws.com/${ecrRepoName}:latest
+    docker rmi ${ecrRepoName}:latest ${awsAccountID}.dkr.ecr.${region}.amazonaws.com/${ecrRepoName}:latest
     """
     
 }
