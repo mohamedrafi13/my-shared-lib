@@ -12,7 +12,7 @@
 def call(String awsAccountID, String region, String ecrRepoName) {
     sh """
     docker build -t ${ecrRepoName} .
-    docker tag ${ecr_repoName}:latest ${awsAccountID}.dkr.ecr.${region}.amazonaws.com/${ecrRepoName}:latest
+    docker tag ${ecrRepoName}:latest ${awsAccountID}.dkr.ecr.${region}.amazonaws.com/${ecrRepoName}:latest
     """
     
 }
